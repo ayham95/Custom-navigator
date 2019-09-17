@@ -3,7 +3,7 @@
 A flutter package that handles navigation deep in the widget tree
 
 
-[](giphy.gif)
+![](giphy.gif)
 
 ## Getting Started
 
