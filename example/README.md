@@ -1,12 +1,12 @@
 # example
 
-A new Flutter application.
-## Getting Started
 
 Here's a simple application that demonstrates how [CustomNavigator]
 works. 
 Using a bottom navigation with simple details page.
-_____
+
+## Getting Started
+
 
 give a navigator key to [MaterialApp] if you want to use the default navigation
 anywhere in your app eg: line 15 & line 93.
@@ -15,7 +15,7 @@ This should be on a global level.
 ```dart
 GlobalKey<NavigatorState> mainNavigatorKey = GlobalKey<NavigatorState>();
 ```
-#### HomePage class
+#### HomePage
 ``` dart
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -68,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
 ```
 
 
-#### Page
+#### Page tab
 This is the page of each tab in the bottom navigation
 ```dart
 
