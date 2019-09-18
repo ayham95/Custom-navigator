@@ -1,3 +1,9 @@
+## [0.2.0] - Sep 18, 2019
+
+* Added [CustomScaffold](https://github.com/ayham95/Custom-navigator/tree/master/custom_scaffold_example)
+* updated Readme.md
+
+
 ## [0.1.1] - Sep 17, 2019
 
 Updated readme and added an example

@@ -1,6 +1,6 @@
 name: custom_navigator
-description: A flutter package that handles navigation deep in the widget tree
-version: 0.1.1
+description: A flutter package that makes it easy to create your own navigator anywhere in the widget tree.
+version: 0.2.0
 author: Ayham Orfali<orfali.ayham@gmail.com>
 homepage: https://github.com/ayham95/Custom-navigator
 

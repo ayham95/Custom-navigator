@@ -39,10 +39,10 @@ packages:
   custom_navigator:
     dependency: "direct main"
     description:
-      path: "/Users/ayham/Desktop/custom_navigator"
-      relative: false
+      path: ".."
+      relative: true
     source: path
-    version: "0.1.0"
+    version: "0.1.1"
   flutter:
     dependency: "direct main"
     description: flutter
