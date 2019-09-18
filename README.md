@@ -3,6 +3,8 @@
 A flutter package that makes it easy to create your own navigator
 anywhere in the widget tree.
 
+A common use for such widget is when you need to implement an "Always presenting bottom navigation bar"
+
 ![](giphy.gif)
 
 ## Getting Started
@@ -10,9 +12,10 @@ First you need to add the package to your `pubspec.yaml` file.
 
 ### Custom scaffold
 
-[CustomScaffold] is a stateful widget that uses the [CustomNavigator] to
-to handle item transition of [BottomNavigationBar] with nested
-navigation while keeping the [BottomNavigationBar] visible!
+[CustomScaffold](https://github.com/ayham95/Custom-navigator/tree/master/custom_scaffold_example)
+is a stateful widget that uses the [CustomNavigator](https://github.com/ayham95/Custom-navigator/tree/master/example) to to handle item
+transition of [BottomNavigationBar] with nested navigation while keeping
+the [BottomNavigationBar] visible!
 
 #### Usage
 
@@ -45,10 +48,10 @@ See the
 [custom_scaffold_example](https://github.com/ayham95/Custom-navigator/tree/master/custom_scaffold_example)
 for more details
 
+_______
+### Custom navigator 
 
-### Custom navigator
-
-The [CustomNavigator] is fairly easy to use
+The [CustomNavigator](https://github.com/ayham95/Custom-navigator/tree/master/example) is fairly easy to use
 
 
 #### Usage
