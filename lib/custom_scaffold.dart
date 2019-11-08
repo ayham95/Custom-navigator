@@ -19,21 +19,23 @@ class CustomScaffold extends StatefulWidget {
   /// so no need to keep track of the index
   final Function(int) onItemTap;
 
-  CustomScaffold(// Can't be constant because of assertions :(
-          {Key key,
-        this.scaffold,
-        this.children, this.onItemTap})
+  CustomScaffold(
+      // Can't be constant because of assertions :(
+      {Key key,
+      this.scaffold,
+      this.children,
+      this.onItemTap})
       : assert(scaffold != null),
         assert(children != null),
         assert(scaffold.bottomNavigationBar != null),
         assert(scaffold.bottomNavigationBar is BottomNavigationBar,
-        '[CustomScaffold] require an instance of [BottomNavigationBar]'),
+            '[CustomScaffold] require an instance of [BottomNavigationBar]'),
         assert(
-        (scaffold.bottomNavigationBar as BottomNavigationBar)
-            .items
-            .length ==
-            children.length,
-        '[BottomNavigationBar] and `children` should be the same size'),
+            (scaffold.bottomNavigationBar as BottomNavigationBar)
+                    .items
+                    .length ==
+                children.length,
+            '[BottomNavigationBar] and `children` should be the same size'),
         super(key: key);
 
   @override
@@ -69,9 +71,9 @@ class _CustomScaffoldState extends State<CustomScaffold> {
       extendBody: widget.scaffold.extendBody,
       floatingActionButton: widget.scaffold.floatingActionButton,
       floatingActionButtonAnimator:
-      widget.scaffold.floatingActionButtonAnimator,
+          widget.scaffold.floatingActionButtonAnimator,
       floatingActionButtonLocation:
-      widget.scaffold.floatingActionButtonLocation,
+          widget.scaffold.floatingActionButtonLocation,
       persistentFooterButtons: widget.scaffold.persistentFooterButtons,
       primary: widget.scaffold.primary,
       resizeToAvoidBottomInset: widget.scaffold.resizeToAvoidBottomInset,
@@ -93,7 +95,7 @@ class _CustomScaffoldState extends State<CustomScaffold> {
       },
       backgroundColor: b.backgroundColor,
       elevation: b.elevation,
-      fixedColor: b.fixedColor,
+      fixedColor: b.selectedItemColor == null ? b.fixedColor : null,
       iconSize: b.iconSize,
       selectedFontSize: b.selectedFontSize,
       selectedIconTheme: b.selectedIconTheme,
