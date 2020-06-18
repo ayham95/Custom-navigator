@@ -55,7 +55,8 @@ class _CustomScaffoldState extends State<CustomScaffold> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: widget.scaffold.key,
-      appBar: widget.scaffold.appBar,
+      //appBar: widget.scaffold.appBar,
+      appBar: _appCustomBar(),
       bottomNavigationBar: _bottomNavBar(),
       backgroundColor: widget.scaffold.backgroundColor,
       bottomSheet: widget.scaffold.bottomSheet,
@@ -77,6 +78,32 @@ class _CustomScaffoldState extends State<CustomScaffold> {
       persistentFooterButtons: widget.scaffold.persistentFooterButtons,
       primary: widget.scaffold.primary,
       resizeToAvoidBottomInset: widget.scaffold.resizeToAvoidBottomInset,
+    );
+  }
+
+  _appCustomBar(){
+    assert(widget.scaffold.appBar != null);
+    AppBar b = widget.scaffold.appBar;
+    return AppBar(
+      key: b.key,
+      backgroundColor: b.backgroundColor,
+      elevation: b.elevation,
+      centerTitle: b.centerTitle,
+      bottom: b.bottom,
+      title: b.title,
+      leading: b.leading,
+      iconTheme: b.iconTheme,
+      brightness: b.brightness,
+      actionsIconTheme: b.actionsIconTheme,
+      actions: b.actions,
+      automaticallyImplyLeading: b.automaticallyImplyLeading,
+      bottomOpacity: b.bottomOpacity,
+      flexibleSpace: b.flexibleSpace,
+      primary: b.primary,
+      shape: b.shape,
+      textTheme: b.textTheme,
+      titleSpacing: b.titleSpacing,
+      toolbarOpacity: b.toolbarOpacity,
     );
   }
 
