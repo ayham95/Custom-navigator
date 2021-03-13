@@ -88,6 +88,11 @@ class _CustomNavigatorState extends State<CustomNavigator>
       observers: widget.navigatorObservers,
     );
   }
+  
+  @override
+  Future<bool> didPushRouteInformation(RouteInformation routeInformation) {
+    return didPushRoute(routeInformation.location);
+  }
 
   @override
   void didChangeAccessibilityFeatures() => setState(() {});
